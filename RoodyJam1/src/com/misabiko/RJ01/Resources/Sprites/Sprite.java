@@ -15,7 +15,7 @@ public class Sprite {
 	public Sprite(String path) {
 		this.path = Resources.resPath + path + ".png";
 		try {
-			img = ImageIO.read(new File(this.path).toURI().toURL());
+			img = ImageIO.read(new File(this.path));
 		} catch (IOException e) {
 		}
 	}
